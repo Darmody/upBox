@@ -13,7 +13,7 @@ implement 一个在 edit box 中直接 paste picture 即可 upload 的jQuery plu
 ================
 
 v1.0Beta 	2014-4-3 18:46
---------------------------
+-------------------------------------------------------------
 
 1. only support screenshot 产生的图片！
 2. 仅 support 可支持 HTML5 的 explorer！
