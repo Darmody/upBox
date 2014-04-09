@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>编辑框CTRL-V粘贴图片测试</title>
+
+		<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="../upBox.js"></script>
+		<script type="text/javascript" src="../jquery.html5uploader.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				var param = {
+
+					width : '35%',
+					uploadUrl : 'yourapp.saveUplaodPic.com'		//填入文件上传路径
+				}
+
+				$(".edit-box").upBox(param);
+
+			});
+		</script>
+		
+		
+	</head>
+	<body>
+			<div class="edit-box">
+			</div>
+	</body>
+</html>
