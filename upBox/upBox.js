@@ -25,7 +25,6 @@
                         + "height:" + opts.height + ";" 
                         + "border:" + opts.border + ";");
 
-      var img = new Image();
       //监听编辑框粘贴事件
       _this.on('paste', function(e) {
         //判断剪切板中Files类型的对象是否存在
@@ -37,6 +36,8 @@
 
             var file = items[i].getAsFile();  //获取文件
 
+            var img = new Image();
+
             //获取图片文件的路径
             fileHandler(file, img);
 
@@ -47,11 +48,12 @@
             
             //将图片插入编辑框
             _this.append(img);
+
+            $('#upBox-img-src').val(img.src)
           }
         }
       });
 
-      return img;
     }); 
 
     function fileHandler(file, img) {

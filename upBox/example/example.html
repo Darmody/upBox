@@ -14,7 +14,7 @@
 				var param = {
 
 					width : '35%',
-					uploadUrl : 'yourapp.saveUplaodPic.com'		//填入文件上传路径
+					uploadUrl : 'http://127.0.0.1:8000'
 				}
 
 				$(".edit-box").upBox(param);
@@ -25,7 +25,8 @@
 		
 	</head>
 	<body>
-			<div class="edit-box">
-			</div>
+				<div class="edit-box">
+					<input type="hidden" id="upBox-img-src"/>
+				</div>
 	</body>
 </html>
